@@ -1,0 +1,119 @@
+/* Iphone SE */
+@media only screen and (device-width: 375px) and (device-height: 667px) {
+  body {
+    background-image: url("/images/bg-mobile.webp");
+  }
+
+  .title {
+    margin-top: 60px;
+  }
+
+  .cards {
+    margin-bottom: 40px;
+  }
+
+  .subscriptions {
+    margin-bottom: 8px;
+  }
+
+  .subscriptions__continue-btn {
+    margin-bottom: 28px;
+  }
+
+  .close {
+    top: 37px;
+  }
+
+  html[lang="fr"] .links,
+  html[lang="de"] .links {
+    font-size: 10px;
+  }
+
+  html[lang="de"] .subscription__description h3 {
+    font-size: 12px;
+  }
+
+  html[lang="fr"] .subscription__description h3,
+  html[lang="fr"] .subscription__subtitle,
+  html[lang="de"] .subscription__subtitle {
+    font-size: 14px;
+  }
+}
+
+/* Iphone 11 pro */
+@media only screen and (device-width: 375px) and (device-height: 812px) {
+  .title {
+    margin-top: 140px;
+  }
+
+  .subscriptions {
+    margin-bottom: 32px;
+  }
+
+  html[lang="fr"] .subscription__subtitle,
+  html[lang="fr"] #subscription__week-title {
+    font-size: 14px;
+  }
+}
+
+/* Iphone 14 pro max */
+@media only screen and (device-width: 430px) and (device-height: 932px),
+  (device-width: 428px) and (device-height: 926px) {
+  .title {
+    font-size: 46px;
+    margin-bottom: 70px;
+  }
+
+  .cards {
+    height: 160px;
+    margin-bottom: 80px;
+  }
+
+  .card {
+    width: 120px;
+  }
+
+  .link {
+    font-size: 12px;
+  }
+
+  .card__text {
+    font-size: 14px;
+  }
+
+  html[lang="pt"] .card__text {
+    font-size: 15px;
+  }
+
+  html[lang="pt"] .card__text {
+    font-size: 15px;
+  }
+
+  html[lang="ja"] .subscription__price,
+  html[lang="ja"] .subscription__description {
+    font-size: 18px;
+  }
+
+  html[lang="de"] #subscription__week-title {
+    font-size: 15px;
+  }
+
+  .subscription_best-offer {
+    width: 130px;
+  }
+}
+
+/* Iphone 8+ */
+@media only screen and (device-width: 414px) and (device-height: 736px) {
+  .title {
+    margin-top: 80px;
+  }
+
+  .card__text {
+    font-size: 13px;
+  }
+
+  html[lang="fr"] .card__text {
+    font-size: 11px;
+  }
+}

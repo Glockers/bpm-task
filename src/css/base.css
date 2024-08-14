@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: 900;
+  font-display: swap;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Heavy.ttf");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-SemiBold.ttf");
+}
+
+body {
+  font-family: "SF Pro Display", sans-serif;
+  background-color: antiquewhite;
+  background-image: url("/images/bg.webp");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.wrapper {
+  padding: 0 24px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 72px;
+}
+
+.close:after {
+  content: "";
+  position: absolute;
+  background: url("/images/cross.webp");
+  background-size: cover;
+  height: 12px;
+  width: 12px;
+}
+
+.title {
+  text-align: center;
+  font-size: 42px;
+  line-height: 46px;
+  margin: 180px auto 40px;
+  color: #ffffff;
+  font-weight: 900;
+  align-content: end;
+  height: 150px;
+}
+
+.cards {
+  height: 139px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 104px;
+  height: 100%;
+  background-size: cover;
+  border-radius: 12px;
+  position: relative;
+}
+
+.card__text {
+  display: block;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 400;
+  position: absolute;
+  margin: 0 7px;
+  color: #ffffff;
+  bottom: 11px;
+}
+
+#card__unlimited-art {
+  background-image: url("/images/cards/art.webp");
+}
+
+#card__exclusive-styles {
+  background-image: url("/images/cards/styles.webp");
+}
+
+#card__magic-avatars {
+  background-image: url("/images/cards/avatars.webp");
+}
+
+.subscriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.subscription {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 32px;
+  height: 56px;
+  padding: 10px 24px 8px;
+}
+
+.subscription__selected {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.subscription__description {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.subscription__subtitle {
+  margin-top: 2px;
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.subscription__price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  opacity: 0.7;
+  width: 102px;
+}
+
+.subscription_best-offer {
+  position: absolute;
+  background-color: #ffffff;
+  width: 119px;
+  height: 20px;
+  right: 24px;
+  top: -10px;
+  border-radius: 10px;
+  text-align: center;
+  color: #141131;
+  font-weight: 700;
+  font-size: 13px;
+  align-content: center;
+}
+
+.subscriptions__continue-btn {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  height: 56px;
+  margin-bottom: 44px;
+  color: #070b33;
+  background-color: white;
+  width: 100%;
+  border-radius: 32px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  align-items: center;
+  font-size: 12.5px;
+  line-height: 15px;
+  font-weight: 400;
+}
+
+html[lang="fr"] .links,
+html[lang="de"] .links {
+  font-size: 10px;
+}
+
+html[lang="de"] #subscription__week-title {
+  font-size: 13px;
+}
+
+.link {
+  color: #ffffff80;
+  min-width: max-content;
+}
